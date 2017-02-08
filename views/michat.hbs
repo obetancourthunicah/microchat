@@ -1,0 +1,16 @@
+<div class="form">
+  <form action="/addtochat" method="post">
+      <label for="chattext">Mensaje</label>
+      <textarea id="chattext" placeholder="Mensaje a enviar" name="chattext"></textarea>
+      <br />
+      <input type="submit" value="Enviar" name="btnEnviar" />
+  </form>
+</div>
+<hr />
+<div class="chatarea">
+  <ul>
+    {{#each messages}}
+      <li>{{message}} on {{on}}</li>
+    {{/each}}
+  </ul>
+</div>
