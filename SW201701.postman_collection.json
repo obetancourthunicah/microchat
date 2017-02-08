@@ -1,0 +1,110 @@
+{
+	"id": "d8587deb-4ee9-2fd9-4cfc-b78f02197173",
+	"name": "SW201701",
+	"description": "",
+	"order": [
+		"f4b4e563-629b-a6bb-4f1e-defde97e50a0",
+		"ea0ac0d4-264b-209d-fc59-fd001a396783",
+		"177cdda1-a7b3-5eb2-e890-a00e5a6d79b7",
+		"c1c696ac-888c-4921-ed0b-955876c941f4"
+	],
+	"folders": [],
+	"timestamp": 1486515139831,
+	"owner": "108800",
+	"public": false,
+	"requests": [
+		{
+			"id": "177cdda1-a7b3-5eb2-e890-a00e5a6d79b7",
+			"headers": "",
+			"url": "http://localhost:3000/api/getchatitem/0",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "d8587deb-4ee9-2fd9-4cfc-b78f02197173",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:3000/api/getchatitem/0",
+			"description": "Obtener un solo item de la coleccion",
+			"descriptionFormat": "html",
+			"time": 1486515193203,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "c1c696ac-888c-4921-ed0b-955876c941f4",
+			"headers": "",
+			"url": "http://localhost:3000/api/removeatindex/1",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "d8587deb-4ee9-2fd9-4cfc-b78f02197173",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:3000/api/removeatindex/1",
+			"description": "Eliminar un elemento de la coleccion",
+			"descriptionFormat": "html",
+			"time": 1486515211739,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "ea0ac0d4-264b-209d-fc59-fd001a396783",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost:3000/api/addtochat",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "d8587deb-4ee9-2fd9-4cfc-b78f02197173",
+			"data": [
+				{
+					"key": "user",
+					"value": "obetancourth",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "message",
+					"value": "Una nueva entrada del Chat 4",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://localhost:3000/api/addtochat",
+			"description": "agregar mensaje a colleccion",
+			"descriptionFormat": "html",
+			"time": 1486515173299,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "f4b4e563-629b-a6bb-4f1e-defde97e50a0",
+			"headers": "",
+			"url": "http://localhost:3000/api/getchat",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "d8587deb-4ee9-2fd9-4cfc-b78f02197173",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:3000/api/getchat",
+			"description": "OBtener todos los mensajes",
+			"descriptionFormat": "html",
+			"time": 1486515139831,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
